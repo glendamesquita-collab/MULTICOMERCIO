@@ -296,15 +296,25 @@ public class painelrh extends JFrame {
 				"New column"
 			}
 		));
-		table_1.setBounds(345, 147, 45, 14);
+		table_1.setBounds(326, 149, 45, 14);
 		contentPane.add(table_1);
 		
-		JToggleButton tglbtnNewToggleButton = new JToggleButton("        Funcionários");
-		tglbtnNewToggleButton.setHorizontalAlignment(SwingConstants.LEADING);
-		tglbtnNewToggleButton.setToolTipText("");
-		tglbtnNewToggleButton.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\usuario-do-circulo.png"));
-		tglbtnNewToggleButton.setBounds(258, 135, 167, 77);
-		contentPane.add(tglbtnNewToggleButton);
+		JToggleButton tglbtnfuncionarios = new JToggleButton(" Funcionários");
+		tglbtnfuncionarios.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		tglbtnfuncionarios.setHorizontalAlignment(SwingConstants.LEADING);
+		tglbtnfuncionarios.setToolTipText("");
+		tglbtnfuncionarios.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\usuario-do-circulo.png"));
+		tglbtnfuncionarios.setBounds(258, 135, 131, 72);
+		contentPane.add(tglbtnfuncionarios);
+		
+		JToggleButton tglbtnativos = new JToggleButton("Ativos hoje");
+		tglbtnativos.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		tglbtnativos.setToolTipText("");
+		tglbtnativos.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\usuario-do-circulo.png"));
+		tglbtnativos.setHorizontalAlignment(SwingConstants.LEADING);
+		tglbtnativos.setBounds(399, 135, 131, 72);
+		contentPane.add(tglbtnativos);
+		
 		
 	}
 	private static void addPopup(Component component, final JPopupMenu popup) {
