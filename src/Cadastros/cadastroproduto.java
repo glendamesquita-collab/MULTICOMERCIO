@@ -70,11 +70,11 @@ public class cadastroproduto extends JFrame {
 		contentPane.setLayout(null);
 		
 		JTextPane cadastroproduto = new JTextPane();
+		cadastroproduto.setBounds(240, 89, 215, 20);
 		cadastroproduto.setBackground(new Color(243, 243, 243));
 		cadastroproduto.setForeground(new Color(0, 0, 0));
 		cadastroproduto.setFont(new Font("Times New Roman", Font.BOLD, 18));
 		cadastroproduto.setText("CADASTRO PRODUTO");
-		cadastroproduto.setBounds(240, 89, 215, 20);
 		contentPane.add(cadastroproduto);
 		
 		Label id = new Label("Id");
@@ -91,8 +91,8 @@ public class cadastroproduto extends JFrame {
 		contentPane.add(categoria);
 		
 		Fieldcategoria = new JTextField();
-		Fieldcategoria.setColumns(10);
 		Fieldcategoria.setBounds(90, 176, 144, 20);
+		Fieldcategoria.setColumns(10);
 		contentPane.add(Fieldcategoria);
 		
 		Label nome = new Label("Nome");
@@ -100,8 +100,8 @@ public class cadastroproduto extends JFrame {
 		contentPane.add(nome);
 		
 		Fieldnome = new JTextField();
-		Fieldnome.setColumns(10);
 		Fieldnome.setBounds(90, 217, 144, 20);
+		Fieldnome.setColumns(10);
 		contentPane.add(Fieldnome);
 		
 		Label modelo = new Label("Modelo");
@@ -109,8 +109,8 @@ public class cadastroproduto extends JFrame {
 		contentPane.add(modelo);
 		
 		Fieldmodelo = new JTextField();
-		Fieldmodelo.setColumns(10);
 		Fieldmodelo.setBounds(90, 253, 144, 20);
+		Fieldmodelo.setColumns(10);
 		contentPane.add(Fieldmodelo);
 		
 		Label descricao = new Label("Descrição");
@@ -118,8 +118,8 @@ public class cadastroproduto extends JFrame {
 		contentPane.add(descricao);
 		
 		Fielddescricao = new JTextField();
-		Fielddescricao.setColumns(10);
 		Fielddescricao.setBounds(90, 289, 144, 20);
+		Fielddescricao.setColumns(10);
 		contentPane.add(Fielddescricao);
 		
 		Label quantidade = new Label("Quan.");
@@ -127,8 +127,8 @@ public class cadastroproduto extends JFrame {
 		contentPane.add(quantidade);
 		
 		Fieldquantidade = new JTextField();
-		Fieldquantidade.setColumns(10);
 		Fieldquantidade.setBounds(90, 325, 72, 20);
+		Fieldquantidade.setColumns(10);
 		contentPane.add(Fieldquantidade);
 		
 		Label fornecedor = new Label("Fornecedor");
@@ -136,8 +136,8 @@ public class cadastroproduto extends JFrame {
 		contentPane.add(fornecedor);
 		
 		Fieldfornecedor = new JTextField();
-		Fieldfornecedor.setColumns(10);
 		Fieldfornecedor.setBounds(411, 253, 144, 20);
+		Fieldfornecedor.setColumns(10);
 		contentPane.add(Fieldfornecedor);
 		
 		Label preco = new Label("Preço");
@@ -149,24 +149,24 @@ public class cadastroproduto extends JFrame {
 		contentPane.add(tamanho);
 		
 		JButton btnNewButton = new JButton("Cancelar");
+		btnNewButton.setBounds(240, 510, 89, 23);
 		btnNewButton.setForeground(new Color(0, 0, 0));
 		btnNewButton.setBackground(new Color(34, 197, 94));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		btnNewButton.setBounds(240, 510, 89, 23);
 		contentPane.add(btnNewButton);
 		
 		JButton btnSalvar = new JButton("Salvar");
+		btnSalvar.setBounds(363, 510, 89, 23);
 		btnSalvar.setBackground(new Color(34, 197, 94));
 		btnSalvar.setForeground(new Color(0, 0, 0));
-		btnSalvar.setBounds(363, 510, 89, 23);
 		contentPane.add(btnSalvar);
 		
 		Fieldpeso = new JTextField();
-		Fieldpeso.setColumns(10);
 		Fieldpeso.setBounds(232, 325, 72, 20);
+		Fieldpeso.setColumns(10);
 		contentPane.add(Fieldpeso);
 		
 		Label peso = new Label("Peso");
@@ -174,13 +174,13 @@ public class cadastroproduto extends JFrame {
 		contentPane.add(peso);
 		
 		Fieldtamanho = new JTextField();
-		Fieldtamanho.setColumns(10);
 		Fieldtamanho.setBounds(381, 325, 72, 20);
+		Fieldtamanho.setColumns(10);
 		contentPane.add(Fieldtamanho);
 		
 		Fieldcor = new JTextField();
-		Fieldcor.setColumns(10);
 		Fieldcor.setBounds(517, 323, 72, 20);
+		Fieldcor.setColumns(10);
 		contentPane.add(Fieldcor);
 		
 		Label cor = new Label("Cor");
@@ -188,8 +188,8 @@ public class cadastroproduto extends JFrame {
 		contentPane.add(cor);
 		
 		Fieldpreco = new JTextField();
-		Fieldpreco.setColumns(10);
 		Fieldpreco.setBounds(381, 287, 72, 20);
+		Fieldpreco.setColumns(10);
 		contentPane.add(Fieldpreco);
 		
 		Label custo = new Label("Custo");
@@ -197,23 +197,23 @@ public class cadastroproduto extends JFrame {
 		contentPane.add(custo);
 		
 		Fieldcusto = new JTextField();
-		Fieldcusto.setColumns(10);
 		Fieldcusto.setBounds(517, 287, 72, 20);
+		Fieldcusto.setColumns(10);
 		contentPane.add(Fieldcusto);
 		
 		JPanel rodape = new JPanel();
-		rodape.setBackground(new Color(34, 197, 94));
 		rodape.setBounds(0, 544, 674, 15);
+		rodape.setBackground(new Color(34, 197, 94));
 		contentPane.add(rodape);
 		
 		JPanel cabecalho = new JPanel();
-		cabecalho.setBackground(new Color(34, 197, 94));
 		cabecalho.setBounds(0, 0, 674, 10);
+		cabecalho.setBackground(new Color(34, 197, 94));
 		contentPane.add(cabecalho);
 
 		JLabel LogoMulticomercio = new JLabel("");
-		LogoMulticomercio.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\Frame_1-removebg-preview (1) (2).png"));
 		LogoMulticomercio.setBounds(23, 31, 215, 46);
+		LogoMulticomercio.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\Frame_1-removebg-preview (1) (2).png"));
 		contentPane.add(LogoMulticomercio);
 		
 	}

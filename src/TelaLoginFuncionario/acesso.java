@@ -81,7 +81,7 @@ public class acesso extends JFrame {
 		
 		JButton btnNewButton = new JButton("Cancelar");
 		btnNewButton.setForeground(new Color(0, 0, 0));
-		btnNewButton.setBackground(new Color(34, 197, 94));
+		btnNewButton.setBackground(new Color(44, 82, 130));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -90,18 +90,18 @@ public class acesso extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JButton btnSalvar = new JButton("Entrar");
-		btnSalvar.setBackground(new Color(34, 197, 94));
+		btnSalvar.setBackground(new Color(44, 82, 130));
 		btnSalvar.setForeground(new Color(0, 0, 0));
 		btnSalvar.setBounds(363, 510, 89, 23);
 		contentPane.add(btnSalvar);
 
 		JPanel rodape = new JPanel();
-		rodape.setBackground(new Color(34, 197, 94));
+		rodape.setBackground(new Color(44, 82, 130));
 		rodape.setBounds(0, 544, 674, 15);
 		contentPane.add(rodape);
 		
 		JPanel cabecalho = new JPanel();
-		cabecalho.setBackground(new Color(34, 197, 94));
+		cabecalho.setBackground(new Color(44, 82, 130));
 		cabecalho.setBounds(0, 0, 674, 10);
 		contentPane.add(cabecalho);
 		
@@ -123,6 +123,10 @@ public class acesso extends JFrame {
 		senhausuario = new JPasswordField();
 		senhausuario.setBounds(277, 217, 144, 20);
 		contentPane.add(senhausuario);
+		
+		Label recuperarsenha = new Label("Recuperar senha");
+		recuperarsenha.setBounds(303, 261, 99, 22);
+		contentPane.add(recuperarsenha);
 		
 	}
 }

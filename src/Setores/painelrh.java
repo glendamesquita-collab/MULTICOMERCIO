@@ -47,6 +47,8 @@ import javax.swing.JLayeredPane;
 import javax.swing.DropMode;
 import java.awt.ScrollPane;
 import javax.swing.JScrollPane;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.LineBorder;
 
 public class painelrh extends JFrame {
 
@@ -55,7 +57,6 @@ public class painelrh extends JFrame {
 	private JTable resumo;
 	private JTable alertas;
 	private JTable table;
-	private JTable table_1;
 
 	/**
 	 * Launch the application.
@@ -76,20 +77,22 @@ public class painelrh extends JFrame {
 	/**
 	 * Create the frame.
 	 */
+	
 	public painelrh() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 690, 598);
+		setBounds(100, 100, 844, 689);
 		contentPane = new JPanel();
 		contentPane.setToolTipText("");
 		contentPane.setBackground(new Color(243, 243, 243));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		contentPane.setLayout(null);
+		contentPane.setLayout(new BorderLayout());
 		
+				
 		JMenuItem menuconfiguracao = new JMenuItem("Configuração");
 		menuconfiguracao.setForeground(Color.BLACK);
 		menuconfiguracao.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		menuconfiguracao.setBackground(new Color(34, 194, 94));
+		menuconfiguracao.setBackground(new Color(44, 82, 130));
 		menuconfiguracao.setBounds(23, 291, 137, 26);
 		contentPane.add(menuconfiguracao);
 		
@@ -114,8 +117,8 @@ public class painelrh extends JFrame {
 		lblNewLabel_notificacao_1.setBounds(165, 486, 29, 32);
 		contentPane.add(lblNewLabel_notificacao_1);
 		
-		JLabel lblNewLabel = new JLabel("__________________________________________________________________________________________________________________________________________________________________________");
-		lblNewLabel.setBounds(0, 60, 691, 14);
+		JLabel lblNewLabel = new JLabel("____________________________________________________________________________________________________________________________________________");
+		lblNewLabel.setBounds(0, 60, 1124, 14);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_notificacao = new JLabel("");
@@ -133,7 +136,7 @@ public class painelrh extends JFrame {
 		JMenuItem menuiaac = new JMenuItem("IAAC");
 		menuiaac.setFont(new Font("Segoe UI", Font.PLAIN, 12));
 		menuiaac.setForeground(new Color(0, 0, 0));
-		menuiaac.setBackground(new Color(34, 194, 94));
+		menuiaac.setBackground(new Color(44, 82, 130));
 		menuiaac.setBounds(23, 237, 137, 32);
 		contentPane.add(menuiaac);
 		
@@ -147,7 +150,7 @@ public class painelrh extends JFrame {
 		JMenuItem menubeneficios = new JMenuItem("Benefícios");
 		menubeneficios.setFont(new Font("Segoe UI", Font.PLAIN, 12));
 		menubeneficios.setForeground(new Color(0, 0, 0));
-		menubeneficios.setBackground(new Color(34, 194, 94));
+		menubeneficios.setBackground(new Color(44, 82, 130));
 		menubeneficios.setBounds(23, 186, 137, 26);
 		contentPane.add(menubeneficios);
 		
@@ -160,7 +163,7 @@ public class painelrh extends JFrame {
 		
 		JMenuItem menuponto = new JMenuItem("Ponto");
 		menuponto.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		menuponto.setBackground(new Color(34, 194, 94));
+		menuponto.setBackground(new Color(44, 82, 130));
 		menuponto.setForeground(new Color(0, 0, 0));
 		menuponto.setBounds(23, 135, 137, 26);
 		contentPane.add(menuponto);
@@ -172,13 +175,13 @@ public class painelrh extends JFrame {
 		contentPane.add(nomeusuario);
 
 		JPanel rodape = new JPanel();
-		rodape.setBackground(new Color(34, 197, 94));
-		rodape.setBounds(0, 544, 674, 15);
+		rodape.setBackground(new Color(44, 82, 130));
+		rodape.setBounds(0, 639, 857, 14);
 		contentPane.add(rodape);
 		
 		JPanel cabecalho = new JPanel();
-		cabecalho.setBackground(new Color(34, 197, 94));
-		cabecalho.setBounds(0, 0, 674, 10);
+		cabecalho.setBackground(new Color(44, 82, 130));
+		cabecalho.setBounds(0, 0, 837, 10);
 		contentPane.add(cabecalho);
 		
 		JLabel lblNewLabel_usuario = new JLabel("New label");
@@ -192,13 +195,13 @@ public class painelrh extends JFrame {
 		contentPane.add(LogoMulticomercio);
 		
 		JEditorPane quadrobranco_1 = new JEditorPane();
-		quadrobranco_1.setBounds(244, 9, 430, 65);
+		quadrobranco_1.setBounds(244, 9, 595, 65);
 		contentPane.add(quadrobranco_1);
 		
 		JMenuItem menupainel = new JMenuItem("Painel");
 		menupainel.setForeground(Color.BLACK);
 		menupainel.setFont(new Font("Segoe UI", Font.PLAIN, 12));
-		menupainel.setBackground(new Color(34, 194, 94));
+		menupainel.setBackground(new Color(44, 82, 130));
 		menupainel.setBounds(23, 83, 137, 26);
 		contentPane.add(menupainel);
 		
@@ -232,12 +235,13 @@ public class painelrh extends JFrame {
 		contentPane.add(lblNewLabel_gerarfolha);
 		
 		resumo = new JTable();
+		resumo.setBorder(new EmptyBorder(2, 2, 2, 2));
 		resumo.setModel(new DefaultTableModel(
 			new Object[][] {
 				{"NOME", "CARGO", "STATUS", "ULT. ACESSO"},
-				{"Jo\u00E3o Silva", "Vendedor", "Ativo", "08:12"},
-				{"Jo\u00E3o Silva", "Gerente", "Ativo", "08:12"},
-				{"Jo\u00E3o Silva", "Vendedor", "Inativo", "08:12"},
+				{"", "", "", ""},
+				{"", "", "", ""},
+				{"", "", "", ""},
 			},
 			new String[] {
 				"New column", "New column", "New column", "New column"
@@ -259,14 +263,23 @@ public class painelrh extends JFrame {
 		lblNewLabel_relatorio.setBounds(592, 486, 99, 32);
 		contentPane.add(lblNewLabel_relatorio);
 		
+		table = new JTable();
+		table.setBounds(326, 152, 1, 1);
+		contentPane.add(table);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(258, 237, 406, 121);
+		contentPane.add(scrollPane);
+		
 		alertas = new JTable();
+		scrollPane.setViewportView(alertas);
 		alertas.setModel(new DefaultTableModel(
 			new Object[][] {
 				{"ALERTAS"},
-				{"Jo\u00E3o Silva atrasado hoje"},
-				{"Contrato de Maria Santos vence em dois dias"},
-				{"Jo\u00E3o Silva atrasado hoje"},
-				{"Jo\u00E3o Silva atrasado hoje"},
+				{""},
+				{""},
+				{""},
+				{""},
 			},
 			new String[] {
 				"New column"
@@ -279,41 +292,94 @@ public class painelrh extends JFrame {
 				return columnTypes[columnIndex];
 			}
 		});
-		alertas.setBounds(258, 252, 406, 80);
-		contentPane.add(alertas);
 		
-		table = new JTable();
-		table.setBounds(326, 152, 1, 1);
-		contentPane.add(table);
+		JPanel panelfuncionarios = new JPanel();
+		panelfuncionarios.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panelfuncionarios.setBackground(Color.WHITE);
+		panelfuncionarios.setBounds(258, 128, 95, 84);
+		contentPane.add(panelfuncionarios);
+		panelfuncionarios.setLayout(null);
 		
-		table_1 = new JTable();
-		table_1.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		table_1.setModel(new DefaultTableModel(
-			new Object[][] {
-				{"120"},
-			},
-			new String[] {
-				"New column"
-			}
-		));
-		table_1.setBounds(326, 149, 45, 14);
-		contentPane.add(table_1);
+		JPanel panel_2 = new JPanel();
+		panel_2.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panel_2.setBounds(0, 0, 95, 31);
+		panelfuncionarios.add(panel_2);
+		panel_2.setLayout(null);
 		
-		JToggleButton tglbtnfuncionarios = new JToggleButton(" Funcionários");
-		tglbtnfuncionarios.setFont(new Font("Tahoma", Font.PLAIN, 9));
-		tglbtnfuncionarios.setHorizontalAlignment(SwingConstants.LEADING);
-		tglbtnfuncionarios.setToolTipText("");
-		tglbtnfuncionarios.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\usuario-do-circulo.png"));
-		tglbtnfuncionarios.setBounds(258, 135, 131, 72);
-		contentPane.add(tglbtnfuncionarios);
+		JLabel lblNewLabelfuncionario = new JLabel("Funcionarios");
+		lblNewLabelfuncionario.setBounds(10, 11, 75, 14);
+		panel_2.add(lblNewLabelfuncionario);
 		
-		JToggleButton tglbtnativos = new JToggleButton("Ativos hoje");
-		tglbtnativos.setFont(new Font("Tahoma", Font.PLAIN, 9));
-		tglbtnativos.setToolTipText("");
-		tglbtnativos.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\usuario-do-circulo.png"));
-		tglbtnativos.setHorizontalAlignment(SwingConstants.LEADING);
-		tglbtnativos.setBounds(399, 135, 131, 72);
-		contentPane.add(tglbtnativos);
+		JLabel lblNewLabelfuncionarioicone = new JLabel("");
+		lblNewLabelfuncionarioicone.setBounds(10, 38, 31, 46);
+		panelfuncionarios.add(lblNewLabelfuncionarioicone);
+		lblNewLabelfuncionarioicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\do-utilizador (1).png"));
+		
+		JPanel panelativos = new JPanel();
+		panelativos.setLayout(null);
+		panelativos.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panelativos.setBackground(Color.WHITE);
+		panelativos.setBounds(359, 128, 95, 84);
+		contentPane.add(panelativos);
+		
+		JPanel panel_2_1 = new JPanel();
+		panel_2_1.setLayout(null);
+		panel_2_1.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panel_2_1.setBounds(0, 0, 95, 31);
+		panelativos.add(panel_2_1);
+		
+		JLabel lblNewLabelativos = new JLabel("Ativos Hoje");
+		lblNewLabelativos.setBounds(10, 11, 75, 14);
+		panel_2_1.add(lblNewLabelativos);
+		
+		JLabel lblNewLabelativosicone = new JLabel("");
+		lblNewLabelativosicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\selecione.png"));
+		lblNewLabelativosicone.setBounds(10, 38, 31, 46);
+		panelativos.add(lblNewLabelativosicone);
+		
+		JPanel panelfaltas = new JPanel();
+		panelfaltas.setLayout(null);
+		panelfaltas.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panelfaltas.setBackground(Color.WHITE);
+		panelfaltas.setBounds(464, 128, 95, 84);
+		contentPane.add(panelfaltas);
+		
+		JPanel panel_2_1_1 = new JPanel();
+		panel_2_1_1.setLayout(null);
+		panel_2_1_1.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panel_2_1_1.setBounds(0, 0, 95, 31);
+		panelfaltas.add(panel_2_1_1);
+		
+		JLabel lblNewLabelfaltas = new JLabel("Faltas Hoje");
+		lblNewLabelfaltas.setBounds(10, 11, 75, 14);
+		panel_2_1_1.add(lblNewLabelfaltas);
+		
+		JLabel lblNewLabelfaltasicone = new JLabel("");
+		lblNewLabelfaltasicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\iconeexclamação.png"));
+		lblNewLabelfaltasicone.setBounds(10, 38, 31, 46);
+		panelfaltas.add(lblNewLabelfaltasicone);
+		
+		JPanel panelnovos = new JPanel();
+		panelnovos.setLayout(null);
+		panelnovos.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panelnovos.setBackground(Color.WHITE);
+		panelnovos.setBounds(569, 128, 95, 84);
+		contentPane.add(panelnovos);
+		
+		JPanel panel_2_1_2 = new JPanel();
+		panel_2_1_2.setLayout(null);
+		panel_2_1_2.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panel_2_1_2.setBounds(0, 0, 95, 31);
+		panelnovos.add(panel_2_1_2);
+		
+		JLabel lblNewLabelnovos = new JLabel("Novos");
+		lblNewLabelnovos.setBounds(10, 11, 75, 14);
+		panel_2_1_2.add(lblNewLabelnovos);
+		
+		JLabel lblNewLabelnovosicone = new JLabel("");
+		lblNewLabelnovosicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\mala.png"));
+		lblNewLabelnovosicone.setBounds(10, 38, 31, 46);
+		panelnovos.add(lblNewLabelnovosicone);
 		
 		
 	}

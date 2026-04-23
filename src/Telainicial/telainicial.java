@@ -139,7 +139,7 @@ public class telainicial extends JFrame {
 		
 		JTextPane painelgeral = new JTextPane();
 		painelgeral.setBackground(new Color(255, 255, 255));
-		painelgeral.setForeground(new Color(34, 197, 94));
+		painelgeral.setForeground(new Color(44, 82, 130));
 		painelgeral.setFont(new Font("Times New Roman", Font.BOLD, 18));
 		painelgeral.setText("Painel Geral");
 		painelgeral.setBounds(23, 119, 103, 22);
@@ -152,12 +152,12 @@ public class telainicial extends JFrame {
 		contentPane.add(nomeusuario);
 
 		JPanel rodape = new JPanel();
-		rodape.setBackground(new Color(34, 197, 94));
+		rodape.setBackground(new Color(44, 82, 130));
 		rodape.setBounds(0, 544, 674, 15);
 		contentPane.add(rodape);
 		
 		JPanel cabecalho = new JPanel();
-		cabecalho.setBackground(new Color(34, 197, 94));
+		cabecalho.setBackground(new Color(44, 82, 130));
 		cabecalho.setBounds(0, 0, 674, 10);
 		contentPane.add(cabecalho);
 		
