@@ -120,11 +120,6 @@ public class telainicialsistema extends JFrame {
 		lblNewLabel_1.setBounds(0, 445, 301, 14);
 		contentPane.add(lblNewLabel_1);
 		
-		JLabel lblNewLabel_notificacao_1 = new JLabel("");
-		lblNewLabel_notificacao_1.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\comentar-alt-check (1).png"));
-		lblNewLabel_notificacao_1.setBounds(165, 486, 29, 32);
-		contentPane.add(lblNewLabel_notificacao_1);
-		
 		JLabel LogoMulticomercio_1 = new JLabel("");
 		LogoMulticomercio_1.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\Frame_1-removebg-preview (1) (2).png"));
 		LogoMulticomercio_1.setBounds(360, 269, 215, 46);
@@ -133,11 +128,6 @@ public class telainicialsistema extends JFrame {
 		JLabel lblNewLabel = new JLabel("__________________________________________________________________________________________________________________________________________________________________________");
 		lblNewLabel.setBounds(0, 60, 691, 14);
 		contentPane.add(lblNewLabel);
-		
-		JLabel lblNewLabel_notificacao = new JLabel("");
-		lblNewLabel_notificacao.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\sino (1).png"));
-		lblNewLabel_notificacao.setBounds(112, 486, 29, 32);
-		contentPane.add(lblNewLabel_notificacao);
 		
 		JMenuItem menumarketing = new JMenuItem("Marketing");
 		menumarketing.setFont(new Font("Segoe UI", Font.PLAIN, 12));
@@ -188,19 +178,19 @@ public class telainicialsistema extends JFrame {
 		contentPane.add(nomeusuario);
 
 		JPanel rodape = new JPanel();
-		rodape.setBackground(new Color(34, 197, 94));
+		rodape.setBackground(new Color(44, 82, 130));
 		rodape.setBounds(0, 544, 674, 15);
 		contentPane.add(rodape);
 		
 		JPanel cabecalho = new JPanel();
-		cabecalho.setBackground(new Color(34, 197, 94));
+		cabecalho.setBackground(new Color(44, 82, 130));
 		cabecalho.setBounds(0, 0, 674, 10);
 		contentPane.add(cabecalho);
 		
-		JLabel lblNewLabel_usuario = new JLabel("New label");
-		lblNewLabel_usuario.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\do-utilizador (1).png"));
-		lblNewLabel_usuario.setBounds(58, 486, 29, 32);
-		contentPane.add(lblNewLabel_usuario);
+		JLabel lblNewLabelusuariosistema = new JLabel("New label");
+		lblNewLabelusuariosistema.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\do-utilizador (1).png"));
+		lblNewLabelusuariosistema.setBounds(58, 486, 29, 32);
+		contentPane.add(lblNewLabelusuariosistema);
 		
 		JLabel LogoMulticomercio = new JLabel("");
 		LogoMulticomercio.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\Frame_1-removebg-preview menor.png"));
@@ -218,18 +208,28 @@ public class telainicialsistema extends JFrame {
 		menupainel.setBounds(23, 83, 137, 26);
 		contentPane.add(menupainel);
 		
-		JEditorPane quadrobranco = new JEditorPane();
-		quadrobranco.setToolTipText("");
-		quadrobranco.setForeground(new Color(255, 255, 255));
-		quadrobranco.setBounds(0, 11, 248, 537);
-		contentPane.add(quadrobranco);
-		
 		JMenuItem menucompras_1 = new JMenuItem("Compras");
 		menucompras_1.setForeground(Color.BLACK);
 		menucompras_1.setFont(new Font("Segoe UI", Font.PLAIN, 12));
 		menucompras_1.setBackground(new Color(34, 194, 94));
 		menucompras_1.setBounds(23, 420, 137, 26);
 		contentPane.add(menucompras_1);
+		
+		JLabel lblNewLabelnotificacaosistema = new JLabel("New label");
+		lblNewLabelnotificacaosistema.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\bell (1).png"));
+		lblNewLabelnotificacaosistema.setBounds(104, 486, 29, 32);
+		contentPane.add(lblNewLabelnotificacaosistema);
+		
+		JLabel lblNewLabelchecksitema = new JLabel("New label");
+		lblNewLabelchecksitema.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\comentar-alt-check (1).png"));
+		lblNewLabelchecksitema.setBounds(154, 486, 29, 32);
+		contentPane.add(lblNewLabelchecksitema);
+		
+		JEditorPane quadrobranco = new JEditorPane();
+		quadrobranco.setToolTipText("");
+		quadrobranco.setForeground(new Color(255, 255, 255));
+		quadrobranco.setBounds(0, 0, 248, 537);
+		contentPane.add(quadrobranco);
 		
 	}
 	private static void addPopup(Component component, final JPopupMenu popup) {

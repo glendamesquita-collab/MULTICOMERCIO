@@ -105,13 +105,13 @@ public class acesso extends JFrame {
 		cabecalho.setBounds(0, 0, 674, 10);
 		contentPane.add(cabecalho);
 		
-		JLabel lblNewLabel_usuario = new JLabel("New label");
-		lblNewLabel_usuario.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\do-utilizador (1).png"));
+		JLabel lblNewLabel_usuario = new JLabel("");
+		lblNewLabel_usuario.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\do-utilizador (1).png"));
 		lblNewLabel_usuario.setBounds(190, 170, 29, 32);
 		contentPane.add(lblNewLabel_usuario);
 		
-		JLabel lblNewLabel_chave = new JLabel("New label");
-		lblNewLabel_chave.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\chave (1).png"));
+		JLabel lblNewLabel_chave = new JLabel("");
+		lblNewLabel_chave.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\chave (1).png"));
 		lblNewLabel_chave.setBounds(190, 207, 29, 32);
 		contentPane.add(lblNewLabel_chave);
 		

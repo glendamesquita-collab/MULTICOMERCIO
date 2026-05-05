@@ -108,7 +108,7 @@ public class painelrh extends JFrame {
 		panel.setBounds(247, 73, 1, 470);
 		contentPane.add(panel);
 		
-		JLabel lblNewLabel_1 = new JLabel("___________________________________");
+		JLabel lblNewLabel_1 = new JLabel("_________________________________________");
 		lblNewLabel_1.setBounds(0, 445, 301, 14);
 		contentPane.add(lblNewLabel_1);
 		
@@ -120,11 +120,6 @@ public class painelrh extends JFrame {
 		JLabel lblNewLabel = new JLabel("____________________________________________________________________________________________________________________________________________");
 		lblNewLabel.setBounds(0, 60, 1124, 14);
 		contentPane.add(lblNewLabel);
-		
-		JLabel lblNewLabel_notificacao = new JLabel("");
-		lblNewLabel_notificacao.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\sino (1).png"));
-		lblNewLabel_notificacao.setBounds(112, 486, 29, 32);
-		contentPane.add(lblNewLabel_notificacao);
 		
 		JMenuItem menurelatorio = new JMenuItem("Relatórios");
 		menurelatorio.setFont(new Font("Segoe UI", Font.PLAIN, 12));
@@ -184,11 +179,6 @@ public class painelrh extends JFrame {
 		cabecalho.setBounds(0, 0, 837, 10);
 		contentPane.add(cabecalho);
 		
-		JLabel lblNewLabel_usuario = new JLabel("New label");
-		lblNewLabel_usuario.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\do-utilizador (1).png"));
-		lblNewLabel_usuario.setBounds(58, 486, 29, 32);
-		contentPane.add(lblNewLabel_usuario);
-		
 		JLabel LogoMulticomercio = new JLabel("");
 		LogoMulticomercio.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\Frame_1-removebg-preview menor.png"));
 		LogoMulticomercio.setBounds(23, 31, 193, 32);
@@ -204,12 +194,6 @@ public class painelrh extends JFrame {
 		menupainel.setBackground(new Color(44, 82, 130));
 		menupainel.setBounds(23, 83, 137, 26);
 		contentPane.add(menupainel);
-		
-		JEditorPane quadrobranco = new JEditorPane();
-		quadrobranco.setToolTipText("");
-		quadrobranco.setForeground(new Color(255, 255, 255));
-		quadrobranco.setBounds(0, 11, 248, 537);
-		contentPane.add(quadrobranco);
 		
 		JLabel lblNewLabel_registroponto = new JLabel("REGISTRO PONTO");
 		lblNewLabel_registroponto.setFont(new Font("Tahoma", Font.PLAIN, 8));
@@ -310,32 +294,10 @@ public class painelrh extends JFrame {
 		lblNewLabelfuncionario.setBounds(10, 11, 75, 14);
 		panel_2.add(lblNewLabelfuncionario);
 		
-		JLabel lblNewLabelfuncionarioicone = new JLabel("");
-		lblNewLabelfuncionarioicone.setBounds(10, 38, 31, 46);
-		panelfuncionarios.add(lblNewLabelfuncionarioicone);
-		lblNewLabelfuncionarioicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\do-utilizador (1).png"));
-		
-		JPanel panelativos = new JPanel();
-		panelativos.setLayout(null);
-		panelativos.setBorder(new LineBorder(new Color(0, 0, 0)));
-		panelativos.setBackground(Color.WHITE);
-		panelativos.setBounds(359, 128, 95, 84);
-		contentPane.add(panelativos);
-		
-		JPanel panel_2_1 = new JPanel();
-		panel_2_1.setLayout(null);
-		panel_2_1.setBorder(new LineBorder(new Color(0, 0, 0)));
-		panel_2_1.setBounds(0, 0, 95, 31);
-		panelativos.add(panel_2_1);
-		
-		JLabel lblNewLabelativos = new JLabel("Ativos Hoje");
-		lblNewLabelativos.setBounds(10, 11, 75, 14);
-		panel_2_1.add(lblNewLabelativos);
-		
-		JLabel lblNewLabelativosicone = new JLabel("");
-		lblNewLabelativosicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\selecione.png"));
-		lblNewLabelativosicone.setBounds(10, 38, 31, 46);
-		panelativos.add(lblNewLabelativosicone);
+		JLabel lblNewLabelfuncionariosicone_1 = new JLabel("");
+		lblNewLabelfuncionariosicone_1.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\employees (1).png"));
+		lblNewLabelfuncionariosicone_1.setBounds(10, 42, 31, 46);
+		panelfuncionarios.add(lblNewLabelfuncionariosicone_1);
 		
 		JPanel panelfaltas = new JPanel();
 		panelfaltas.setLayout(null);
@@ -354,10 +316,10 @@ public class painelrh extends JFrame {
 		lblNewLabelfaltas.setBounds(10, 11, 75, 14);
 		panel_2_1_1.add(lblNewLabelfaltas);
 		
-		JLabel lblNewLabelfaltasicone = new JLabel("");
-		lblNewLabelfaltasicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\iconeexclamação.png"));
-		lblNewLabelfaltasicone.setBounds(10, 38, 31, 46);
-		panelfaltas.add(lblNewLabelfaltasicone);
+		JLabel lblNewLabelfaltasicone_1_1_2 = new JLabel("");
+		lblNewLabelfaltasicone_1_1_2.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\iconeexclamação.png"));
+		lblNewLabelfaltasicone_1_1_2.setBounds(10, 38, 31, 46);
+		panelfaltas.add(lblNewLabelfaltasicone_1_1_2);
 		
 		JPanel panelnovos = new JPanel();
 		panelnovos.setLayout(null);
@@ -380,6 +342,96 @@ public class painelrh extends JFrame {
 		lblNewLabelnovosicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\mala.png"));
 		lblNewLabelnovosicone.setBounds(10, 38, 31, 46);
 		panelnovos.add(lblNewLabelnovosicone);
+		
+		JPanel panelfaltas_1 = new JPanel();
+		panelfaltas_1.setLayout(null);
+		panelfaltas_1.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panelfaltas_1.setBackground(Color.WHITE);
+		panelfaltas_1.setBounds(563, 122, 95, 84);
+		panelnovos.add(panelfaltas_1);
+		
+		JPanel panel_2_1_1_1 = new JPanel();
+		panel_2_1_1_1.setLayout(null);
+		panel_2_1_1_1.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panel_2_1_1_1.setBounds(0, 0, 95, 31);
+		panelfaltas_1.add(panel_2_1_1_1);
+		
+		JLabel lblNovos = new JLabel("Novos");
+		lblNovos.setBounds(10, 11, 75, 14);
+		panel_2_1_1_1.add(lblNovos);
+		
+		JLabel lblNewLabelfaltasicone_1_1_2_1 = new JLabel("");
+		lblNewLabelfaltasicone_1_1_2_1.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\mala.png"));
+		lblNewLabelfaltasicone_1_1_2_1.setBounds(10, 38, 31, 46);
+		panelfaltas_1.add(lblNewLabelfaltasicone_1_1_2_1);
+		
+		JPanel panelativos = new JPanel();
+		panelnovos.add(panelativos);
+		panelativos.setLayout(null);
+		panelativos.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panelativos.setBackground(Color.WHITE);
+		panelativos.setBounds(355, 122, 95, 84);
+		
+		JPanel panel_2_1 = new JPanel();
+		panel_2_1.setLayout(null);
+		panel_2_1.setBorder(new LineBorder(new Color(0, 0, 0)));
+		panel_2_1.setBounds(0, 0, 95, 31);
+		panelativos.add(panel_2_1);
+		
+		JLabel lblNewLabelativos = new JLabel("Ativos Hoje");
+		lblNewLabelativos.setBounds(10, 11, 75, 14);
+		panel_2_1.add(lblNewLabelativos);
+		
+		JLabel lblNewLabelfaltasicone_1_1_1 = new JLabel("");
+		lblNewLabelfaltasicone_1_1_1.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\selecione.png"));
+		lblNewLabelfaltasicone_1_1_1.setBounds(10, 42, 25, 35);
+		panelativos.add(lblNewLabelfaltasicone_1_1_1);
+		
+		JLabel lblNewLabelnewfuncionarioicone = new JLabel("");
+		lblNewLabelnewfuncionarioicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\add-user (1).png"));
+		lblNewLabelnewfuncionarioicone.setBounds(283, 447, 31, 46);
+		panelnovos.add(lblNewLabelnewfuncionarioicone);
+		
+		JLabel lblNewLabelregistropontoicone = new JLabel("");
+		lblNewLabelregistropontoicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\identification (1).png"));
+		lblNewLabelregistropontoicone.setBounds(389, 447, 31, 46);
+		panelnovos.add(lblNewLabelregistropontoicone);
+		
+		JLabel lblNewLabelgerarrfolhaicone = new JLabel("");
+		lblNewLabelgerarrfolhaicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\contract (1).png"));
+		lblNewLabelgerarrfolhaicone.setBounds(499, 447, 31, 46);
+		panelnovos.add(lblNewLabelgerarrfolhaicone);
+		
+		JLabel lblNewLabelrelatoriosicone = new JLabel("");
+		lblNewLabelrelatoriosicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\bar-chart (1).png"));
+		lblNewLabelrelatoriosicone.setBounds(598, 447, 31, 46);
+		panelnovos.add(lblNewLabelrelatoriosicone);
+		
+		JLabel lblNewLabel_notificacao = new JLabel("");
+		panelnovos.add(lblNewLabel_notificacao);
+		lblNewLabel_notificacao.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\sino (1).png"));
+		lblNewLabel_notificacao.setBounds(66, 490, 29, 32);
+		
+		JEditorPane quadrobranco = new JEditorPane();
+		panelnovos.add(quadrobranco);
+		quadrobranco.setToolTipText("");
+		quadrobranco.setForeground(new Color(255, 255, 255));
+		quadrobranco.setBounds(202, 103, 248, 537);
+		
+		JLabel lblNewLabelnotificaoicone = new JLabel("");
+		lblNewLabelnotificaoicone.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\bell (1).png"));
+		lblNewLabelnotificaoicone.setBounds(93, 462, 31, 46);
+		panelnovos.add(lblNewLabelnotificaoicone);
+		
+		JLabel lblNewLabelregistropontoicone_1 = new JLabel("");
+		lblNewLabelregistropontoicone_1.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\do-utilizador (1).png"));
+		lblNewLabelregistropontoicone_1.setBounds(52, 462, 31, 46);
+		panelnovos.add(lblNewLabelregistropontoicone_1);
+		
+		JLabel lblNewLabelregistropontoicone_2 = new JLabel("");
+		lblNewLabelregistropontoicone_2.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO2\\ICONES\\comentar-alt-check (1).png"));
+		lblNewLabelregistropontoicone_2.setBounds(134, 462, 31, 46);
+		panelnovos.add(lblNewLabelregistropontoicone_2);
 		
 		
 	}

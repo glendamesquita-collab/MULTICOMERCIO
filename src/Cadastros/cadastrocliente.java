@@ -22,6 +22,8 @@ import javax.swing.JLabel;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
 import java.awt.event.ActionEvent;
 import javax.swing.JFormattedTextField;
 
@@ -77,26 +79,63 @@ public class cadastrocliente extends JFrame {
 		cadastrofuncionario.setBounds(240, 88, 210, 20);
 		contentPane.add(cadastrofuncionario);
 		
+		// ----	
 		Label nome = new Label("Nome");
 		nome.setBounds(26, 143, 41, 22);
 		contentPane.add(nome);
 		
+		//  cria o exemplo de como escrever no campo
+		
 		Fieldnome = new JTextField();
 		Fieldnome.setBounds(90, 143, 144, 20);
-		contentPane.add(Fieldnome);
+		
+		Fieldnome.addFocusListener(new FocusAdapter() {
+            public void focusGained(FocusEvent e) {
+                if (Fieldnome.getText().equals("João S. Silva")) {
+                	Fieldnome.setText("");
+                	Fieldnome.setForeground(Color.BLACK);
+                }
+            }
+
+            public void focusLost(FocusEvent e) {
+                if (Fieldnome.getText().isEmpty()) {
+                	Fieldnome.setText("João S. Silva");
+                	Fieldnome.setForeground(Color.GRAY);
+                }
+            }
+        });  //  cria o exemplo de como escrever no campo ^(edita Filednome e "Digite seu nome" )
+		                                               // |  //
+		
+	    contentPane.add(Fieldnome);
 		Fieldnome.setColumns(10);
+		//----
 		
 		Label cpf = new Label("CPF");
 		cpf.setBounds(26, 176, 41, 22);
-		
-		
-		
 		contentPane.add(cpf);
 		
 		Fieldcpf = new JTextField();
 		Fieldcpf.setColumns(10);
+		
+		Fieldcpf.addFocusListener(new FocusAdapter() {
+            public void focusGained(FocusEvent e) {
+                if (Fieldcpf.getText().equals(" 000.000.000-00")) {
+                	Fieldcpf.setText("");
+                	Fieldcpf.setForeground(Color.BLACK);
+                }
+            }
+
+            public void focusLost(FocusEvent e) {
+                if (Fieldcpf.getText().isEmpty()) {
+                	Fieldcpf.setText("000.000.000-00");
+                	Fieldcpf.setForeground(Color.GRAY);
+           
+     } }});
+		
 		Fieldcpf.setBounds(90, 176, 144, 20);
 		contentPane.add(Fieldcpf);
+		
+		//----
 		
 		Label contato = new Label("Contato");
 		contato.setBounds(26, 215, 58, 22);
@@ -104,26 +143,90 @@ public class cadastrocliente extends JFrame {
 		
 		Fieldcontato = new JTextField();
 		Fieldcontato.setColumns(10);
+		
+		Fieldcontato = new JTextField();
+		Fieldcontato.setBounds(90, 143, 144, 20);
+		
+		Fieldcontato.addFocusListener(new FocusAdapter() {
+            public void focusGained(FocusEvent e) {
+                if (Fieldcontato.getText().equals("(00)000000000")) {
+                	Fieldcontato.setText("");
+                	Fieldcontato.setForeground(Color.BLACK);
+                }
+            }
+
+            public void focusLost(FocusEvent e) {
+                if (Fieldcontato.getText().isEmpty()) {
+                	Fieldcontato.setText("(00)000000000");
+                	Fieldcontato.setForeground(Color.GRAY);
+                }
+            }
+        }); 
+		
 		Fieldcontato.setBounds(90, 217, 144, 20);
 		contentPane.add(Fieldcontato);
 		
+		//----
+
 		Label cep = new Label("CEP");
 		cep.setBounds(26, 251, 41, 22);
 		contentPane.add(cep);
 		
 		Fieldcep = new JTextField();
 		Fieldcep.setColumns(10);
+		
+		Fieldcep = new JTextField();
+		Fieldcep.setBounds(90, 143, 144, 20);
+		
+		Fieldcep.addFocusListener(new FocusAdapter() {
+            public void focusGained(FocusEvent e) {
+                if (Fieldcep.getText().equals("00000-000")) {
+                	Fieldcep.setText("");
+                	Fieldcep.setForeground(Color.BLACK);
+                }
+            }
+
+            public void focusLost(FocusEvent e) {
+                if (Fieldcep.getText().isEmpty()) {
+                	Fieldcep.setText("00000-000");
+                	Fieldcep.setForeground(Color.GRAY);
+                }
+            }
+        }); 
+		
 		Fieldcep.setBounds(90, 253, 144, 20);
 		contentPane.add(Fieldcep);
 		
+		//----
+
 		Label endereco = new Label("Endereço");
 		endereco.setBounds(26, 287, 54, 22);
 		contentPane.add(endereco);
 		
 		Fieldendereco = new JTextField();
 		Fieldendereco.setColumns(10);
+		
+		Fieldendereco.addFocusListener(new FocusAdapter() {
+            public void focusGained(FocusEvent e) {
+                if (Fieldendereco.getText().equals("Avenida,Rua,Beco")) {
+                	Fieldendereco.setText("");
+                	Fieldendereco.setForeground(Color.BLACK);
+                }
+            }
+
+            public void focusLost(FocusEvent e) {
+                if (Fieldendereco.getText().isEmpty()) {
+                	Fieldendereco.setText("Avenida,Rua, Beco");
+                	Fieldendereco.setForeground(Color.GRAY);
+                }
+            }
+        }); 
+		
 		Fieldendereco.setBounds(90, 289, 144, 20);
 		contentPane.add(Fieldendereco);
+		
+		//----
+
 		
 		Label bairro = new Label("Bairro");
 		bairro.setBounds(26, 323, 54, 22);
@@ -131,8 +234,27 @@ public class cadastrocliente extends JFrame {
 		
 		Fieldbairro = new JTextField();
 		Fieldbairro.setColumns(10);
+		
+		Fieldbairro.addFocusListener(new FocusAdapter() {
+            public void focusGained(FocusEvent e) {
+                if (Fieldbairro.getText().equals(" Orquideas da Ilha")) {
+                	Fieldbairro.setText("");
+                	Fieldbairro.setForeground(Color.BLACK);
+                }
+            }
+
+            public void focusLost(FocusEvent e) {
+                if (Fieldbairro.getText().isEmpty()) {
+                	Fieldbairro.setText("Orquideas da Ilha");
+                	Fieldbairro.setForeground(Color.GRAY);
+                }
+            }
+        });
+		
 		Fieldbairro.setBounds(90, 325, 144, 20);
 		contentPane.add(Fieldbairro);
+		
+		// -----
 		
 		Label datanasc = new Label("Data Nasc");
 		datanasc.setBounds(363, 143, 64, 22);
@@ -140,48 +262,145 @@ public class cadastrocliente extends JFrame {
 		
 		Fielddatanasc = new JTextField();
 		Fielddatanasc.setColumns(10);
+		
+		
+		Fielddatanasc.addFocusListener(new FocusAdapter() {
+            public void focusGained(FocusEvent e) {
+                if (Fielddatanasc.getText().equals("00/00/0000")) {
+                	Fielddatanasc.setText("");
+                	Fielddatanasc.setForeground(Color.BLACK);
+                }
+            }
+
+            public void focusLost(FocusEvent e) {
+                if (Fielddatanasc.getText().isEmpty()) {
+                	Fielddatanasc.setText("00/00/0000");
+                	Fielddatanasc.setForeground(Color.GRAY);
+                }
+            }
+        });  
+		
 		Fielddatanasc.setBounds(476, 143, 144, 20);
 		contentPane.add(Fielddatanasc);
+		
+		// -----
+
 		
 		Label email = new Label("E-mail");
 		email.setBounds(363, 176, 64, 22);
 		contentPane.add(email);
-		
 		Fieldemail = new JTextField();
 		Fieldemail.setColumns(10);
+		
+		Fieldemail.addFocusListener(new FocusAdapter() {
+            public void focusGained(FocusEvent e) {
+                if (Fieldemail.getText().equals("joaosilva@gmail")) {
+                	Fieldemail.setText("");
+                	Fieldemail.setForeground(Color.BLACK);
+                }
+            }
+
+            public void focusLost(FocusEvent e) {
+                if (Fieldemail.getText().isEmpty()) {
+                	Fieldemail.setText("joaosilva@gmail");
+                	Fieldemail.setForeground(Color.GRAY);
+                }
+            }
+        });  
+		
+		
 		Fieldemail.setBounds(476, 176, 144, 20);
 		contentPane.add(Fieldemail);
 		
+		// -----
+
 		Label uf = new Label("UF");
 		uf.setBounds(363, 251, 64, 22);
 		contentPane.add(uf);
-		
 		Fielduf = new JTextField();
 		Fielduf.setColumns(10);
+		
+		Fielddatanasc.addFocusListener(new FocusAdapter() {
+            public void focusGained(FocusEvent e) {
+                if (Fielduf.getText().equals("SP ou São Paulo")) {
+                	Fielduf.setText("");
+                	Fielduf.setForeground(Color.BLACK);
+                }
+            }
+
+            public void focusLost(FocusEvent e) {
+                if (Fielduf.getText().isEmpty()) {
+                	Fielduf.setText("SP ou São Paulo");
+                	Fielduf.setForeground(Color.GRAY);
+                }
+            }
+        });  
+		
 		Fielduf.setBounds(476, 251, 144, 20);
 		contentPane.add(Fielduf);
 		
+		// -----
+
 		Label numero = new Label("Numero");
+		
+		Fieldnumero = new JTextField();
+		Fieldnumero.setColumns(10);
 		numero.setBounds(363, 287, 64, 22);
 		contentPane.add(numero);
+		
+		
+		Fieldnumero.addFocusListener(new FocusAdapter() {
+            public void focusGained(FocusEvent e) {
+                if (Fieldnumero.getText().equals("Nº 000")) {
+                	Fieldnumero.setText("");
+                	Fieldnumero.setForeground(Color.BLACK);
+                }
+            }
+
+            public void focusLost(FocusEvent e) {
+                if (Fieldnumero.getText().isEmpty()) {
+                	Fieldnumero.setText("Nº 000");
+                	Fieldnumero.setForeground(Color.GRAY);
+                }
+            }
+        });  
+		
+		Fieldnumero.setBounds(476, 287, 144, 20);
+		contentPane.add(Fieldnumero);
+		
+		// -----
+ 
 		
 		Label complemento = new Label("Complemento");
 		complemento.setBounds(363, 323, 91, 22);
 		contentPane.add(complemento);
 		
-		Fieldnumero = new JTextField();
-		Fieldnumero.setColumns(10);
-		Fieldnumero.setBounds(476, 287, 144, 20);
-		contentPane.add(Fieldnumero);
 		
 		Fieldcomplemento = new JTextField();
 		Fieldcomplemento.setColumns(10);
+		
+		Fielddatanasc.addFocusListener(new FocusAdapter() {
+            public void focusGained(FocusEvent e) {
+                if (Fieldcomplemento.getText().equals("Bloco A, 10º andar")) {
+                	Fieldcomplemento.setText("");
+                	Fieldcomplemento.setForeground(Color.BLACK);
+                }
+            }
+
+            public void focusLost(FocusEvent e) {
+                if (Fieldcomplemento.getText().isEmpty()) {
+                	Fieldcomplemento.setText("Bloco A, 10º andar");
+                	Fieldcomplemento.setForeground(Color.GRAY);
+                }
+            }
+        });  
+		
 		Fieldcomplemento.setBounds(476, 325, 144, 20);
 		contentPane.add(Fieldcomplemento);
 		
 		JButton btnNewButton = new JButton("Cancelar");
 		btnNewButton.setForeground(new Color(0, 0, 0));
-		btnNewButton.setBackground(new Color(34, 197, 94));
+		btnNewButton.setBackground(new Color(44, 82, 130));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
@@ -190,18 +409,18 @@ public class cadastrocliente extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JButton btnSalvar = new JButton("Salvar");
-		btnSalvar.setBackground(new Color(34, 197, 94));
+		btnSalvar.setBackground(new Color(44, 82, 130));
 		btnSalvar.setForeground(new Color(0, 0, 0));
 		btnSalvar.setBounds(363, 510, 89, 23);
 		contentPane.add(btnSalvar);
 
 		JPanel rodape = new JPanel();
-		rodape.setBackground(new Color(34, 197, 94));
+		rodape.setBackground(new Color(44, 82, 130));
 		rodape.setBounds(0, 544, 674, 15);
 		contentPane.add(rodape);
 		
 		JPanel cabecalho = new JPanel();
-		cabecalho.setBackground(new Color(34, 197, 94));
+		cabecalho.setBackground(new Color(44, 82, 130));
 		cabecalho.setBounds(0, 0, 674, 10);
 		contentPane.add(cabecalho);
 		

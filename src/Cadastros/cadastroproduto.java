@@ -203,12 +203,12 @@ public class cadastroproduto extends JFrame {
 		
 		JPanel rodape = new JPanel();
 		rodape.setBounds(0, 544, 674, 15);
-		rodape.setBackground(new Color(34, 197, 94));
+		rodape.setBackground(new Color(44, 82, 130));
 		contentPane.add(rodape);
 		
 		JPanel cabecalho = new JPanel();
 		cabecalho.setBounds(0, 0, 674, 10);
-		cabecalho.setBackground(new Color(34, 197, 94));
+		cabecalho.setBackground(new Color(44, 82, 130));
 		contentPane.add(cabecalho);
 
 		JLabel LogoMulticomercio = new JLabel("");

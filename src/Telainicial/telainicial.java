@@ -163,7 +163,7 @@ public class telainicial extends JFrame {
 		
 		JLabel lblNewLabel_usuario = new JLabel("New label");
 		lblNewLabel_usuario.setIcon(new ImageIcon("C:\\Users\\karoline62261506\\Downloads\\MULTICOMERCIO\\ICONES\\do-utilizador (1).png"));
-		lblNewLabel_usuario.setBounds(58, 486, 29, 32);
+		lblNewLabel_usuario.setBounds(58, 486, 64, 32);
 		contentPane.add(lblNewLabel_usuario);
 		
 		JLabel LogoMulticomercio = new JLabel("");
